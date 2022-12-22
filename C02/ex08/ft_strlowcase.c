@@ -1,24 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strupcase.c                                     :+:      :+:    :+:   */
+/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: Julien Milants <julien.milants@gmail.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/22 20:37:10 by Julien Mila       #+#    #+#             */
-/*   Updated: 2022/12/22 20:43:13 by Julien Mila      ###   ########.fr       */
+/*   Created: 2022/12/22 20:43:24 by Julien Mila       #+#    #+#             */
+/*   Updated: 2022/12/22 20:44:43 by Julien Mila      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strupcase(char *str)
+char    *ft_strlowcase(char *str)
 {
     int i;
 
     i = 0;
     while (str[i] != '\0')
     {
-        if (!(str[i] >= 'a' && str[i] <= 'z'))
-            str[i] += 32;
+        if (!(str[i] >= 'A' && str[i] <= 'Z'))
+            str[i] -= 32;
         i++;
     }
     return (str);
