@@ -10,13 +10,13 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_ultime_div_mod(int *a, int *b)
+void	ft_ultime_div_mod(int *a, int *b)
 {
-    int div;
-    int mod;
+	int	div;
+	int	mod;
 
-    div = *a / *b;
-    mod = *a % *b;
-    *a = div;
-    *b = mod;
+	div = *a / *b;
+	mod = *a % *b;
+	*a = div;
+	*b = mod;
 }
