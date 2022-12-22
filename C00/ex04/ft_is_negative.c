@@ -1,9 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: Julien Milants <julien.milants@gmail.co    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/12/22 14:07:59 by Julien Mila       #+#    #+#             */
+/*   Updated: 2022/12/22 14:08:04 by Julien Mila      ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 
-void ft_is_negative(int n)
+void	ft_is_negative(int n)
 {
-    if(n >= 0)
-        write(1, &"P", 1);
-    else
-        write(1, &"N", 1); 
+	if (n >= 0)
+		write(1, &"P", 1);
+	else
+		write(1, &"N", 1);
 }
