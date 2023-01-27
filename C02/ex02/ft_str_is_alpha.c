@@ -6,21 +6,20 @@
 /*   By: Julien Milants <julien.milants@gmail.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/22 15:06:03 by Julien Mila       #+#    #+#             */
-/*   Updated: 2022/12/22 20:29:04 by Julien Mila      ###   ########.fr       */
+/*   Updated: 2023/01/27 19:53:08 by Julien Mila      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_str_is_alpha(char *str)
+int    ft_str_is_alpha(char *str)
 {
-    int i;
+    int        c;
 
-    i = -1;
-    if (str[0] == '\0')
-        return (0);
-    while (str[++i])
+    c = 0;
+    while (str[c] != '\0')
     {
-        if ((str[i] < 'A' && str[i] > 'Z') || (str[i] > 'z' && str[i] < 'a'))
-            return (1);
+        if ((str[c] < 'A') || (str[c] > 'Z' && str[c] < 'a') || (str[c] > 'z'))
+            return (0);
+        c++;
     }
-    return (0);
+    return (1);
 }
