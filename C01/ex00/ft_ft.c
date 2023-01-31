@@ -1,18 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_ft.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: Julien Milants <julien.milants@gmail.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/31 12:09:45 by Julien Mila       #+#    #+#             */
-/*   Updated: 2023/01/31 12:10:53 by Julien Mila      ###   ########.fr       */
+/*   Created: 2023/01/31 12:25:26 by Julien Mila       #+#    #+#             */
+/*   Updated: 2023/01/31 12:26:14 by Julien Mila      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void ft_print_alphabet(void)
+void ft_ft(int *nbr)
 {
-    write(1, 'abcdefghijklmnopqrstuvwxyz', 26);
+    *nbr = 42;
 }
